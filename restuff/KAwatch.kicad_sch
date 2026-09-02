@@ -3638,6 +3638,16 @@
 		)
 		(uuid "1cac4781-ec25-44d0-b959-d7b9b30fdd8d")
 	)
+	(text "Nig"
+		(exclude_from_sim no)
+		(at 209.804 127.508 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "36b7ac14-8b12-41be-9639-7d5d7fb5be59")
+	)
 	(text "Motorized Vibration System"
 		(exclude_from_sim no)
 		(at 244.348 52.578 0)
