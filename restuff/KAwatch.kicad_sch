@@ -3246,14 +3246,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AMS1117-3.3"
+		(symbol "Regulator_Linear:XC6220B331MR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -3.81 3.175 0)
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3262,40 +3262,17 @@
 					)
 				)
 			)
-			(property "Value" "AMS1117-3.3"
-				(at 0 3.175 0)
+			(property "Value" "XC6220B331MR"
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-				(at 2.54 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3306,7 +3283,18 @@
 					)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
+			(property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf"
+				(at 19.05 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1A, Low Drop-out Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3317,7 +3305,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "ki_keywords" "LDO Voltage Regulator 1A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3328,10 +3316,21 @@
 					)
 				)
 			)
-			(symbol "AMS1117-3.3_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "XC6220B331MR_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3341,11 +3340,11 @@
 					)
 				)
 			)
-			(symbol "AMS1117-3.3_1_1"
+			(symbol "XC6220B331MR_1_1"
 				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3360,10 +3359,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3378,10 +3377,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "CE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3389,6 +3388,43 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4024,6 +4060,12 @@
 		)
 	)
 	(junction
+		(at 226.06 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "195b4242-a0e9-488e-b8e4-72c24e5929f9")
+	)
+	(junction
 		(at 135.89 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4054,10 +4096,10 @@
 		(uuid "39bc8629-e189-4741-aa7b-ad31839c0ef4")
 	)
 	(junction
-		(at 229.87 130.81)
+		(at 217.17 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3f198dfc-4694-44ee-a7a3-a3b6fab7a027")
+		(uuid "72cc9c63-f8ef-4218-a612-75e9c947b71b")
 	)
 	(junction
 		(at 234.95 85.09)
@@ -4106,12 +4148,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aff04f76-25e4-401c-8342-53fffd76afe4")
-	)
-	(junction
-		(at 222.25 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "da274f6a-a67b-447a-92ba-c2bb146db26c")
 	)
 	(junction
 		(at 251.46 95.25)
@@ -4319,16 +4355,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 139.7) (xy 238.76 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21a5a8ae-9d01-4286-a2d3-687d0edcee12")
-	)
-	(wire
-		(pts
 			(xy 85.09 88.9) (xy 110.49 88.9)
 		)
 		(stroke
@@ -4389,23 +4415,13 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 130.81) (xy 229.87 130.81)
+			(xy 217.17 130.81) (xy 229.87 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "27cc1d5d-6d25-4eeb-ad57-b538132bbc8b")
-	)
-	(wire
-		(pts
-			(xy 246.38 130.81) (xy 251.46 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27d6649b-d351-4970-ac32-85826bc9e0d0")
 	)
 	(wire
 		(pts
@@ -4426,6 +4442,16 @@
 			(type default)
 		)
 		(uuid "2ab2f53b-0074-490e-b708-137a7b18b461")
+	)
+	(wire
+		(pts
+			(xy 226.06 130.81) (xy 226.06 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb084d0-45a5-41e4-b4d3-5b4c8f2bd350")
 	)
 	(wire
 		(pts
@@ -4496,6 +4522,16 @@
 			(type default)
 		)
 		(uuid "3fbe946f-1b1c-47fa-a7fa-33d30d11c009")
+	)
+	(wire
+		(pts
+			(xy 217.17 148.59) (xy 217.17 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4173c4c9-0ead-4ecb-ac16-bde5ba5ab021")
 	)
 	(wire
 		(pts
@@ -4586,16 +4622,6 @@
 			(type default)
 		)
 		(uuid "4ee391c1-382e-40f8-a208-3e49e1fbc6a6")
-	)
-	(wire
-		(pts
-			(xy 238.76 138.43) (xy 238.76 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50019120-bfe3-4133-a4d9-1f582096a7c8")
 	)
 	(wire
 		(pts
@@ -4809,6 +4835,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 143.51) (xy 217.17 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0cb1488-f9c2-494b-b160-f5a6a5fe2d5a")
+	)
+	(wire
+		(pts
 			(xy 130.81 95.25) (xy 135.89 95.25)
 		)
 		(stroke
@@ -4899,16 +4935,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 130.81) (xy 231.14 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5229ad1-c68f-428c-b35e-50284e936531")
-	)
-	(wire
-		(pts
 			(xy 242.57 59.69) (xy 242.57 69.85)
 		)
 		(stroke
@@ -4959,7 +4985,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 130.81) (xy 222.25 132.08)
+			(xy 217.17 130.81) (xy 217.17 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5146,6 +5172,16 @@
 			(type default)
 		)
 		(uuid "ec08ea50-328b-4453-88a8-813a3fd007df")
+	)
+	(wire
+		(pts
+			(xy 217.17 143.51) (xy 238.76 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efecd680-a38d-4e9e-b0bd-d5ed897c15ed")
 	)
 	(wire
 		(pts
@@ -5779,6 +5815,95 @@
 			(project "KAwatch"
 				(path "/d13b4dc6-0a30-4e9b-a54d-0e2e2d77415c"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:XC6220B331MR")
+		(at 238.76 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2faf45e0-4b18-4e1d-9334-4ebc5b301ced")
+		(property "Reference" "U3"
+			(at 238.76 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XC6220B331MR"
+			(at 238.76 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 238.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.torexsemi.com/file/xc6220/XC6220.pdf"
+			(at 257.81 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A, Low Drop-out Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+			(at 238.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "7ff3f76b-adff-4f0b-bead-0081d2fda324")
+		)
+		(pin "4"
+			(uuid "d49077ad-8711-454a-949b-1f32827e565d")
+		)
+		(pin "3"
+			(uuid "d992fcd9-1675-4f30-9e75-cd8c8461267d")
+		)
+		(pin "1"
+			(uuid "3b027ad2-3985-41e2-be64-d9547674a094")
+		)
+		(pin "2"
+			(uuid "d3c9e043-f657-4323-89c5-2c305a352d2f")
+		)
+		(instances
+			(project "KAwatch"
+				(path "/d13b4dc6-0a30-4e9b-a54d-0e2e2d77415c"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6699,7 +6824,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 139.7 0)
+		(at 217.17 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6710,7 +6835,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f3a9845-28b9-4330-85c6-5beb005943b0")
 		(property "Reference" "#PWR08"
-			(at 222.25 146.05 0)
+			(at 217.17 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6721,7 +6846,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 144.78 0)
+			(at 217.17 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6731,7 +6856,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 139.7 0)
+			(at 217.17 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6742,7 +6867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 139.7 0)
+			(at 217.17 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6753,7 +6878,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 139.7 0)
+			(at 217.17 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8218,7 +8343,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 222.25 135.89 0)
+		(at 217.17 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8229,7 +8354,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbe29260-8552-45e3-b002-2aaed866e23f")
 		(property "Reference" "C3"
-			(at 226.06 134.6199 0)
+			(at 220.98 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8240,7 +8365,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 226.06 137.1599 0)
+			(at 220.98 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8251,7 +8376,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 223.2152 139.7 0)
+			(at 218.1352 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8262,7 +8387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 135.89 0)
+			(at 217.17 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8273,7 +8398,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 222.25 135.89 0)
+			(at 217.17 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8531,89 +8656,6 @@
 			(project "KAwatch"
 				(path "/d13b4dc6-0a30-4e9b-a54d-0e2e2d77415c"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 238.76 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e10cadbb-92ec-4496-8c44-c90b02d4409b")
-		(property "Reference" "U3"
-			(at 238.76 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-3.3"
-			(at 238.76 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 238.76 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 241.3 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 238.76 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "051fc49b-e60d-4ff8-83ba-869cfe7b77ce")
-		)
-		(pin "2"
-			(uuid "a2a6e19f-aa7c-4993-8a55-5a080e6db737")
-		)
-		(pin "1"
-			(uuid "2e4ce80e-5557-4f52-aa53-4ceffcf65574")
-		)
-		(instances
-			(project "KAwatch"
-				(path "/d13b4dc6-0a30-4e9b-a54d-0e2e2d77415c"
-					(reference "U3")
 					(unit 1)
 				)
 			)
