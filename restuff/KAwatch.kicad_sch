@@ -5402,7 +5402,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 42.672 124.46 90)
 			(hide yes)
 			(show_name no)
@@ -5563,7 +5563,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.332 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -5818,7 +5818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.6552 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5900,7 +5900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 243.5352 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6307,7 +6307,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
 			(at 113.03 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6389,7 +6389,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 42.672 111.76 90)
 			(hide yes)
 			(show_name no)
@@ -6470,7 +6470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_Module:ESP32-WROOM-32E"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 118.11 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6888,7 +6888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 200.152 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -7127,7 +7127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 220.472 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -7209,7 +7209,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 130.81 88.9 90)
 			(hide yes)
 			(show_name no)
@@ -7313,7 +7313,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 138.43 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -7586,7 +7586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 252.4252 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7930,7 +7930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 210.312 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -8090,7 +8090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 			(at 257.81 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8250,7 +8250,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 223.2152 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8332,7 +8332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 258.7752 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8654,7 +8654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 85.852 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -8737,7 +8737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 46.482 54.61 90)
 			(hide yes)
 			(show_name no)
